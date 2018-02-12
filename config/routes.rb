@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   root 'pages#index'
   
   # Define routes for pages
+  get 'index' => 'pages#index'
+  
   get 'home' => 'pages#home'
 
   get 'profile' => 'pages#profile'
