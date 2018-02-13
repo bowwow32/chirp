@@ -11,6 +11,8 @@ class PagesController < ApplicationController
 
   # Back-end code for pages/profile
   def profile
+    # Grab the username from the user in the URL as :id
+    @username = params[:id]
   end
 
   # Back-end code for pages/explore
